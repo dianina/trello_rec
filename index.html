@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trello</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="https://use.fontawesome.com/c555f55746.js"></script>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/css/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="leftNav">
+				<button class="btnTableros commonBtn"><i class="fa fa-trello" aria-hidden="true"></i><p>Tableros</p></button>
+				<input class="search commonBtn" type="text"><i class="fa fa-search"></i>
+			</div>
+
+			<div class="logo"><img src="assets/img/header-logo.png" alt=""></a></div>
+
+			<div class="rightNav">
+				<button class="btnPlus commonBtn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+				<button class="btnInfo commonBtn"><i class="fa fa-info" aria-hidden="true"></i></button>
+				<button class="btnBell commonBtn"><i class="fa fa-bell-o" aria-hidden="true"></i></button>
+				<button class="btnUser"><i class="fa fa-user" aria-hidden="true"></i></button>
+			</div>
+		</nav>
+	</header>
+	<section class="user">
+		<h4 class="nameTab">Tablero - Reto de Código</h4>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+		<i class="fa fa-lock" aria-hidden="true"></i>
+		<p>Privado</p>		
+	</section>
+	<section id="table">
+		<div id="putList"></div>
+		<div class="addList">Añadir una lista...</div>
+		<div id="formList">
+			<input placeholder="Añadir una lista..." id="textList"><button class="btnSave" id="btnSave">Guardar</button><icon class="fa fa-times" id="btnIcon"></icon>
+		</div>
+	</section>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
