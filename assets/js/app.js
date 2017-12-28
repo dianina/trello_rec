@@ -1,3 +1,7 @@
+/*
+Funcionalidad Añadiendo listas
+*/
+
 var btnAdd = document.getElementsByClassName('addList')[0];
 
 	btnAdd.addEventListener('click', add);
