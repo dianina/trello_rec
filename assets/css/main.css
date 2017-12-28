@@ -1,3 +1,6 @@
+/*
+Estilos Generales
+*/
 body {
 	font-family: 'Lato';
 	margin: auto;
@@ -10,23 +13,31 @@ header {
 }
 
 section {
-	width: 98%;
+	width: 100%;
 	margin: auto;
 }
 
-.leftNav {
+/*
+Menú izquierda Nav
+*/
+.leftMenu {
 	display: inline-block;
 	position: absolute;
 	left: 0px;
-
 }
 
-.rightNav {
+/*
+Menú derecha Nav
+*/
+.rightMenu {
 	display: inline-block;
 	position: absolute;
 	right: 10px;
 }
 
+/*
+Logo
+*/
 .logo {
 	opacity: 0.6;
 	margin: 5px;
@@ -59,14 +70,14 @@ section {
 	cursor: pointer;
 }
 
-.btnTableros i{
+.btnTab i{
 	font-size: 18px;
 	margin-right: 10px;
 	padding-left: 0px;
 	line-height: 12px;
 }
 
-.btnTableros p{
+.btnTab p{
 	display: inline-block;
 	font-weight: bold;
 	margin: 0px;
