@@ -1,3 +1,9 @@
+
+/*
+Carga del documento
+*/
+
+window.onload = function() {
 /*
 Funcionalidad agregando listas
 */
@@ -44,7 +50,7 @@ Configuro y agrego nodos
 Se crean nodos del btn, para agregar a tarjeta
 */
 			var btnList = document.createElement('button');
-			btnList.setAttribute('class','btnAddCardOne');
+			btnList.setAttribute('class','btnAddCard1st');
 			btnList.textContent = 'Agregar una tarjeta...'
 			
 
@@ -88,11 +94,13 @@ Crear más tarjetas en el tablero....
 	};
 
 	function addCard(){
-		document.getElementsByClassName('btnAddCardOne')[0].style.display = 'none';
+		document.getElementsByClassName('btnAddCard1st')[0].style.display = 'none';
 		document.getElementsByClassName('formCard')[0].style.display = 'inline-block';
 	};
 
 	function btnAddCard(){
-		document.getElementsByClassName('btnAddCardOne')[0].style.display = 'none';
+		document.getElementsByClassName('btnAddCard1st')[0].style.display = 'none';
 		document.getElementsByClassName('formCard')[0].style.display = 'inline-block';
 	};
+
+}

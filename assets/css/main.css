@@ -90,12 +90,12 @@ Estilos hover botones nav
 	font-size: 14px;
 }
 
-.rightMenu .navBtn:hover, .leftMenu .btnTableros:hover {
+.rightMenu .navBtn:hover, .leftMenu .btnTab:hover {
 	background-color: rgba(102, 164, 199, .5);
 	cursor: pointer;
 }
 
-.iconUser {
+.iconU {
 	border-radius: 35px;
 	background-color: #444;
 	border:none;
@@ -112,11 +112,7 @@ Secciòn principal
 	display: inline-block;
 }
 
-.fa-star-o {
-	margin-right: 20px;
-}
-
-.user p{
+.myCards p{
 	font-size: 16px;
 	display: inline-block;
 	color: #fff;
@@ -145,8 +141,11 @@ Secciòn agregar lista
 	background: rgba(0, 84, 133, 1);
 }
 
+/*
+Secciòn listas y contenidos
+*/
 #formList, .containerList {
-	background: #E2E4E6;
+	background: #E2E4E1;
 	width: 265px;
 	display: inline-block;
 	border-radius: 4px;
@@ -172,7 +171,7 @@ Secciòn agregar lista
 	text-align: left;
 	border:none;
 	transition: opacity 0.5s;
-	box-shadow: 0px 0px 8px rgba(0,0,0,0.3) inset;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
 	outline: none;
 }
 
@@ -191,7 +190,7 @@ Secciòn agregar lista
 }
 
 #table .btnSave {
-	background-color: #5EB72E;
+	background-color: #5EB70E;
 	color: #fff;
 	font-weight: bold;
 	font-size: 14px;
@@ -217,7 +216,7 @@ Secciòn agregar lista
 	display: none;
 }
 
-.btnAddCardOne {
+.btnAddCard1st {
 	color: #888;
 	font-size: 14px;
 	width: 100%;
@@ -231,7 +230,7 @@ Secciòn agregar lista
 	outline: none;
 }
 
-.btnAddCardOne:hover {
+.btnAddCard1st:hover {
 	background: #ccc;
 	color: #555;
 	text-decoration: underline;	
