@@ -1,21 +1,27 @@
 /*
-Funcionalidad Añadiendo listas
+Funcionalidad agregando listas
 */
 
 var btnAdd = document.getElementsByClassName('addList')[0];
 
 	btnAdd.addEventListener('click', add);
 
+/*
+Funcionalidad botón guardar
+*/
 	function add(){
-		var btnIcon = document.getElementById('btnIcon');
+		var addBtn = document.getElementById('addBtn');
 		document.getElementsByClassName('addList')[0].style.display = 'none';
 		document.getElementById('formList').style.display = 'inline-block';
 
 		var boton = document.getElementById('btnSave');
 		boton.onclick = newList;
-		btnIcon.onclick = redo;
+		addBtn.onclick = redo;
 	};
 
+/*
+Ahora si, creo nuevas listas
+*/
 	function newList(){
 		var textList = document.getElementById('textList').value;
 		document.getElementById('textList').value = '';
@@ -23,7 +29,9 @@ var btnAdd = document.getElementsByClassName('addList')[0];
 			return;
 		}
 
-			//obteniendo y creando nodos;
+/*
+Configuro y agrego nodos
+*/
 			var putList = document.getElementById('putList');
 			var containerList = document.createElement('div');
 			containerList.setAttribute('class','containerList');
@@ -32,20 +40,25 @@ var btnAdd = document.getElementsByClassName('addList')[0];
 			var addNameList = document.createElement('input');		
 			addNameList.setAttribute('value',textList);
 
-			//creando nodos del boton para agregar tarjeta
+/*
+Se crean nodos del btn, para agregar a tarjeta
+*/
 			var btnList = document.createElement('button');
 			btnList.setAttribute('class','btnAddCardOne');
-			btnList.textContent = 'Añadir una tarjeta...'
+			btnList.textContent = 'Agregar una tarjeta...'
 			
-			//btnList.setAttribute('class','btnSave');
 
-			// agregando nodos hijos a nodos padres;
+/*
+Se agregan nodos hijos a nodos padres
+*/
 			nameList.appendChild(addNameList);
 			containerList.appendChild(nameList);
 			containerList.appendChild(btnList);
 			putList.appendChild(containerList);
 
-			//hidden formulario añadir tarjeta
+/*
+Esconder formulario, al agregar tarjeta
+*/
 			var containerAll = document.querySelector('.containerList');
 			var formCard = document.createElement('div');
 			formCard.setAttribute('class','formCard');
@@ -54,7 +67,7 @@ var btnAdd = document.getElementsByClassName('addList')[0];
 			inputCard.setAttribute('class','inputCard');
 			var btnSaveCard = document.createElement('button');
 			btnSaveCard.setAttribute('class','btnSave');
-			btnSaveCard.textContent = 'Añadir';
+			btnSaveCard.textContent = 'Agregar';
 			var iconCard = document.createElement('icon');		
 			iconCard.setAttribute('class', 'fa fa-times');
 
@@ -66,6 +79,9 @@ var btnAdd = document.getElementsByClassName('addList')[0];
 			btnList.onclick = addCard;
 	};
 
+/*
+Crear más tarjetas en el tablero....
+*/
 	function redo(){
 		document.getElementById('formList').style.display = 'none';
 		document.getElementsByClassName('addList')[0].style.display = 'inline-block';

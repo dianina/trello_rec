@@ -123,6 +123,9 @@ Secciòn principal
 	margin: 12px 10px;
 }
 
+/*
+Secciòn agregar lista
+*/
 #table .addList {
 	background: rgba(0, 84, 133, .4);
 	color: rgba(255, 255, 255, .7);
