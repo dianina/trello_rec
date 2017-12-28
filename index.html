@@ -15,32 +15,34 @@
 		<nav>
 			<div class="leftMenu">
 <!-- Botón e ícono tableros -->
-				<button class="btnTab commonBtn"><i class="fa fa-trello" aria-hidden="true"></i><p>Tableros</p></button>
+				<button class="btnTab navBtn"><i class="fa fa-trello" aria-hidden="true"></i><p>Tableros</p></button>
 <!-- Zona Search -->
-				<input class="search commonBtn" type="text"><i class="fa fa-search"></i>
+				<input class="search navBtn" type="text"><i class="fa fa-search"></i>
 			</div>
 <!-- Logo Trello -->
 			<div class="logo"><img src="assets/img/header-logo.png" alt=""></a></div>
 <!-- Menu Derecha (botones)-->
 			<div class="rightMenu">
-				<button class="btnPlus commonBtn"><i class="fa fa-plus" aria-hidden="true"></i></button>
-				<button class="btnInfo commonBtn"><i class="fa fa-info" aria-hidden="true"></i></button>
-				<button class="btnBell commonBtn"><i class="fa fa-bell-o" aria-hidden="true"></i></button>
-				<button class="btnUser"><i class="fa fa-user" aria-hidden="true"></i></button>
+				<button class="iconPlus navBtn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+				<button class="iconInfo navBtn"><i class="fa fa-info" aria-hidden="true"></i></button>
+				<button class="iconBell navBtn"><i class="fa fa-bell-o" aria-hidden="true"></i></button>
+				<button class="iconUser"><i class="fa fa-user" aria-hidden="true"></i></button>
 			</div>
 		</nav>
+<!-- Fin Header / Nav -->
 	</header>
+<!-- Secciòn principal -->
 	<section class="user">
-		<h4 class="nameTab">Tablero - Reto de Código</h4>
+		<h4 class="tabText">Tablero - Reto de Código</h4>
 		<i class="fa fa-star-o" aria-hidden="true"></i>
 		<i class="fa fa-lock" aria-hidden="true"></i>
 		<p>Privado</p>		
 	</section>
 	<section id="table">
 		<div id="putList"></div>
-		<div class="addList">Añadir una lista...</div>
+		<div class="addList">Agregar una lista...</div>
 		<div id="formList">
-			<input placeholder="Añadir una lista..." id="textList"><button class="btnSave" id="btnSave">Guardar</button><icon class="fa fa-times" id="btnIcon"></icon>
+			<input placeholder="Agregar una lista..." id="textList"><button class="btnSave" id="btnSave">Guardar</button><icon class="fa fa-times" id="btnIcon"></icon>
 		</div>
 	</section>
 	<script src="assets/js/app.js"></script>

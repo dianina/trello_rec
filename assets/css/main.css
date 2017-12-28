@@ -48,6 +48,9 @@ Logo
 	opacity: 0.8;
 }
 
+/*
+Estilos fa icons
+*/
 .fa {
 	color: #fff;
 }
@@ -56,7 +59,10 @@ Logo
 	margin-left: -30px;
 }
 
-.commonBtn {
+/*
+Estilos generales btns del nav
+*/
+.navBtn {
 	background-color: #66A4C7;
 	color: #fff;
 	border: none;
@@ -65,10 +71,9 @@ Logo
 	margin:5px;
 }
 
-.rightNav .commonBtn:hover, .leftNav .btnTableros:hover {
-	background-color: rgba(102, 164, 199, .5);
-	cursor: pointer;
-}
+/*
+Estilos hover botones nav
+*/
 
 .btnTab i{
 	font-size: 18px;
@@ -85,14 +90,19 @@ Logo
 	font-size: 14px;
 }
 
-.btnUser {
+.rightMenu .navBtn:hover, .leftMenu .btnTableros:hover {
+	background-color: rgba(102, 164, 199, .5);
+	cursor: pointer;
+}
+
+.iconUser {
 	border-radius: 35px;
 	background-color: #444;
 	border:none;
 	padding: 10px 12px;
 }
 
-.nameTab {
+.tabText {
 	color: #fff;
 	font-size: 16px;
 	margin: 10px 15px 10px 10px;
